@@ -3,7 +3,14 @@ const rawLoader = require("craco-raw-loader");
 
 module.exports = {
   plugins: [
-    { plugin: CracoLessPlugin },
+    {
+      plugin: CracoLessPlugin,
+      options: {
+        lessLoaderOptions: {
+          javascriptEnabled: true
+        }
+      }
+    },
     { plugin: rawLoader, options: { test: /\.(md|txt)$/ } }
   ]
 };

@@ -1,11 +1,11 @@
 import React from "react";
 import "./styles/index";
-import MarkdownView from "./markdown/Markdown";
+import Form from "./pages/form/Form";
 
 const App: React.FC = () => {
   return (
-    <div style={{ padding: "0 20px" }}>
-      <MarkdownView />
+    <div style={{ padding: "20px" }}>
+      <Form />
     </div>
   );
 };
