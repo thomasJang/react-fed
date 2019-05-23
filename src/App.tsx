@@ -1,11 +1,11 @@
 import React from "react";
 import "./styles/index";
-import Form from "./pages/form/Form";
+import JoinForm from "./pages/form/JoinForm";
 
 const App: React.FC = () => {
   return (
     <div style={{ padding: "20px" }}>
-      <Form />
+      <JoinForm email={"tom@chequer.io"} />
     </div>
   );
 };
