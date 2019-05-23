@@ -7,7 +7,7 @@ import styled from "styled-components";
  * 1. Form.Item다루기
  * 2. validator 사용하기
  * 3. Modal사용하기
- * 4. Modal애니메이션 변경하기
+ * 4. Modal커스트마이징
  */
 
 interface IProps extends FormComponentProps {
@@ -35,6 +35,8 @@ class JoinForm extends React.Component<IProps> {
     validateFields(async (err: any, values: any) => {
       if (!err) {
         Modal.info({
+          transitionName: "slidedown",
+          className: "my-ant-modal",
           title: "form data",
           content: JSON.stringify(values)
         });

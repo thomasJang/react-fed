@@ -1,0 +1,60 @@
+.ant-modal {
+  .effect() {
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+  }
+
+  &.slidedown-enter,
+  &.slidedown-appear {
+    opacity: 0;
+    .effect();
+    animation-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
+    animation-play-state: paused;
+  }
+
+  &.slidedown-leave {
+    .effect();
+    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.34);
+    animation-play-state: paused;
+  }
+
+  &.slidedown-enter&.slidedown-enter-active,
+  &.slidedown-appear&.slidedown-appear-active {
+    animation-name: antModalSlideDown;
+    animation-play-state: running;
+  }
+
+  &.slidedown-leave&.slidedown-leave-active {
+    animation-name: antModalSlideUp;
+    animation-play-state: running;
+  }
+
+  @keyframes antModalSlideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes antModalSlideUp {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.my-ant-modal {
+  top: 0;
+  .ant-modal-content {
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/index";
-import JoinForm from "./pages/form/JoinForm";
+import JoinForm from "./pages/JoinForm";
 
 const App: React.FC = () => {
   return (
