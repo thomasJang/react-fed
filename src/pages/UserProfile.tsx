@@ -28,13 +28,13 @@ class UserProfile extends React.Component<IProps> {
           <Avatar size={40} icon="user" />
         </div>
         <div className="profile">
-          <span className="user-name">Thomas Jand</span>
+          <span className="user-name">Thomas Jang</span>
           <br />
           <span className="company-name">CHEQUER</span>
         </div>
         <div>
           <Popover
-            // overlayClassName="my-popover"
+            // overlayClassName="my-antd-popover"
             // trigger="click"
             content={<UserMenu />}
           >
