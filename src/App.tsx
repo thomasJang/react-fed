@@ -4,6 +4,7 @@ import "./styles/index";
 import { Layout, Breadcrumb } from "antd";
 import styled from "styled-components";
 import UserProfile from "./pages/UserProfile";
+import JoinForm from "./pages/JoinForm";
 
 const SLayout = styled(Layout)`
   > .ant-layout-sider {
@@ -30,7 +31,9 @@ const App: React.FC = () => {
           <Breadcrumb.Item>List</Breadcrumb.Item>
           <Breadcrumb.Item>App</Breadcrumb.Item>
         </Breadcrumb>
-        <Layout.Content className="main-content">Content</Layout.Content>
+        <Layout.Content className="main-content">
+          <JoinForm />
+        </Layout.Content>
       </Layout>
     </SLayout>
   );
