@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Avatar, Icon, Popover } from "antd";
-import { SMixinFlexRow } from "../styled/minins";
+import { SMixinFlexRow } from "../styled/mixins";
 import UserMenu from "./UserMenu";
 
 interface IProps {}
