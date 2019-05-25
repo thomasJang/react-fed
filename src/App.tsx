@@ -1,9 +1,9 @@
 import React from "react";
 import "./styles/index";
-import PanelResize from "./pages/PanelResize";
+import DragDrop from "./pages/DragDrop";
 
 const App: React.FC = () => {
-  return <PanelResize />;
+  return <DragDrop />;
 };
 
 export default App;
