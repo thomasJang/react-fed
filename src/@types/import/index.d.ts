@@ -15,3 +15,7 @@ declare module "*.md" {
   const content: string;
   export default content;
 }
+
+declare module "console" {
+  export = typeof import("console");
+}
