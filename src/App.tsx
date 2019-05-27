@@ -1,6 +1,7 @@
-import React from "react";
-import "./styles/index";
-import MarkdownView from "./markdown/Markdown";
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import './test.less';
 
 const App: React.FC = () => {
   return (
