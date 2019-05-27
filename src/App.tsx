@@ -1,7 +1,7 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import "./test.less";
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import './test.less';
 
 const App: React.FC = () => {
   return (
