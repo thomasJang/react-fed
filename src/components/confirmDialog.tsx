@@ -20,7 +20,7 @@ export interface IConfirmDialogOptions {
 }
 
 const confirmDialog = function(options: IConfirmDialogOptions) {
-  return new Promise<boolean>((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     const modalContent =
       typeof options.content === "string" ? (
         <span {...dangerouslySetInnerHTML(options.content)} />
