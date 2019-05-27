@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-// import { SMixinFlexRow, SMixinFlexColumn } from "../styled/mixins";
-// import mouseEventSubscribe from "../util/mouseEventSubscribe";
 
 const Container = styled.div``;
 
@@ -15,6 +13,8 @@ class PanelResize extends React.Component<IProps> {
 
 export default PanelResize;
 
+// import { SMixinFlexRow, SMixinFlexColumn } from "../styled/mixins";
+// import mouseEventSubscribe from "../util/mouseEventSubscribe";
 // const Container = styled.div`
 //   height: 100vh;
 //   ${SMixinFlexRow("stretch", "stretch")};
